@@ -11,10 +11,11 @@ unittest {
 	assert(encode(7,bs16) == "7");
 	assert(encode(12, bs16) == "c");
 	assert(encode(255, bs16) == "ff");
+	assert(encode(1234, bs16) == "4d2");
 }
 
 
-string encode(uint input, string alps)
+string encode(uint input, ref string alps)
 {
 	string hash = "";
 	uint l = cast(uint) alps.length;
