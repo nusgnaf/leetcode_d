@@ -44,5 +44,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="t\arr.d" />
+    <Compile Include="t\hashid.d" />
   </ItemGroup>
 </Project>
