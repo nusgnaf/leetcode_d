@@ -15,7 +15,7 @@ unittest {
 }
 
 
-string encode(uint input, ref string alps)
+string encode(uint input, string alps)
 {
 	string hash = "";
 	uint l = cast(uint) alps.length;
@@ -26,3 +26,9 @@ string encode(uint input, ref string alps)
 	return hash;
 }
 
+string FYshuffle(string alps, string salt)
+{
+	int i,j,v,p;
+
+	return "";
+}
