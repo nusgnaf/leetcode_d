@@ -1,9 +1,9 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="t/hashid.d">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="t/arr.d" Line="1" Column="1" />
-      <File FileName="t/hashid.d" Line="17" Column="17" />
+      <File FileName="t/hashid.d" Line="38" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
