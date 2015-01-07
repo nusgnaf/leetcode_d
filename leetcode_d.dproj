@@ -47,5 +47,6 @@
     <Compile Include="t\hashid.d" />
     <Compile Include="t\cpymv.d" />
     <Compile Include="t\str.d" />
+    <Compile Include="t\strct.d" />
   </ItemGroup>
 </Project>

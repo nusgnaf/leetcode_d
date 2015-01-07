@@ -12,3 +12,10 @@ bool leapYear(uint digi)
 {
 	return true;
 }
+
+void main()
+{
+	auto s = [1,2,3];
+	size_t i = s.length;
+	std.stdio.writeln(typeof(i).stringof);
+}
