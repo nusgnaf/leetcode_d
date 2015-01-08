@@ -5,7 +5,7 @@ import std.ascii, std.string, std.utf, std.stdio;
 unittest {
 	string u = "hahaha";
 	string v = u_change(u);
-	assert(u == v);
+	assert(u == v);	
 }
 
 string u_change(ref string s)
@@ -43,15 +43,18 @@ unittest {
 	assert(icmp("a","b") == -1);
 	assert(icmp("b","a") == 1);
 	assert(icmp("a","A") == 0); //  case incensitive!
+	assert(inPattern('a', "a-z"));
+	assert(!inPattern('A',"a-z"));
+	assert(leftJustify("hah",5) == "hah  ");
+	assert(rightJustify("hah", 5) == "  hah");
+	assert(leftJustify("hah", 5, '!') == "hah!!");
+	assert(removechars("123abc", "a-z") == "123");
+	assert(removechars("123abc", "^a-z") == "abc");
 }
 
 
-void main()
-{
-	writeln(countchars("faint", "fuck"));
-	writeln(removechars("faint", "fuck"));
-	writeln(format("k=%s;v=%s", 1, 2));
-	writeln(icmp("a","b"));
-	writeln(icmp("a","A"));
-	writeln(icmp("b","a"));
-}
+//void main()
+//{
+//	writeln(leftJustify("haha",10, '!'));
+//	writeln(rightJustify("haha",10, '!'));
+//}
