@@ -48,5 +48,6 @@
     <Compile Include="t\cpymv.d" />
     <Compile Include="t\str.d" />
     <Compile Include="t\strct.d" />
+    <Compile Include="StringLeet.d" />
   </ItemGroup>
 </Project>

@@ -1,11 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="t/hashid.d">
+  <MonoDevelop.Ide.Workbench ActiveDocument="t/str.d">
     <Files>
-      <File FileName="t/arr.d" Line="1" Column="1" />
+      <File FileName="t/arr.d" Line="2" Column="2" />
       <File FileName="t/hashid.d" Line="1" Column="1" />
-      <File FileName="t/cpymv.d" Line="1" Column="1" />
-      <File FileName="t/str.d" Line="39" Column="39" />
+      <File FileName="t/cpymv.d" Line="3" Column="3" />
+      <File FileName="t/str.d" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
