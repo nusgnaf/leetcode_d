@@ -61,15 +61,11 @@ unittest {
 	assert(canFind([1,2,3,4,5], 1, 6));
 	assert(canFind("haha", "ah", "ha"));
 	assert(canFind("haha", "aha"));
+	assert(findAmong(["uv", "ah", "ok"], "haha") == ["ah", "ok"]);
 }
 
 
 //void main()
 //{
-//	auto s = [1,2,3];
-//	assert(!canFind([1,2,3,4,5], 6));
-//	writeln(find(s, 1));
-//	writeln(canFind(s, [1,3], [2,3]));
-//	writeln(canFind("haha", "ah","ha"));
-//	writeln(canFind("haha", "ah"));
+//	writeln(findAmong(["uv", "ah", "ha", "ok"], "haha"));
 //}
