@@ -1,6 +1,7 @@
 ﻿module t.str;
 
 import std.ascii, std.string, std.utf, std.stdio;
+import std.algorithm, std.array;
 
 unittest {
 	string u = "hahaha";
@@ -50,11 +51,25 @@ unittest {
 	assert(leftJustify("hah", 5, '!') == "hah!!");
 	assert(removechars("123abc", "a-z") == "123");
 	assert(removechars("123abc", "^a-z") == "abc");
+	assert(!canFind([1,2,3,4,5], [6]));
+	// following two cases only work in pre-2.0.67
+	// when one needle, don't wrap in array(which has range interface)
+	// fix is easy: just list all needles, don't wrap in array!
+//	assert(!canFind([1,2,3,4,5], [6]));
+	assert(!canFind([1,2,3,4,5], 6));
+//	assert(canFind([1,2,3,4,5], [1, 6]));
+	assert(canFind([1,2,3,4,5], 1, 6));
+	assert(canFind("haha", "ah", "ha"));
+	assert(canFind("haha", "aha"));
 }
 
 
 //void main()
 //{
-//	writeln(leftJustify("haha",10, '!'));
-//	writeln(rightJustify("haha",10, '!'));
+//	auto s = [1,2,3];
+//	assert(!canFind([1,2,3,4,5], 6));
+//	writeln(find(s, 1));
+//	writeln(canFind(s, [1,3], [2,3]));
+//	writeln(canFind("haha", "ah","ha"));
+//	writeln(canFind("haha", "ah"));
 //}
