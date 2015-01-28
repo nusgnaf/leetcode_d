@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "leetcode_d", "leetcode_d.dproj", "{F2D594C8-4D36-47FE-884F-6017EC5A4E24}"
 EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "primeNum", "primeNum\primeNum.dproj", "{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,6 +12,12 @@ Global
 		Unittest|Any CPU = Unittest|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -18,6 +26,6 @@ Global
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = leetcode_d.dproj
+		StartupItem = primeNum\primeNum.dproj
 	EndGlobalSection
 EndGlobal
