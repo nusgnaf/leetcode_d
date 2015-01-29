@@ -18,30 +18,33 @@ immutable(int)[] loadPrimeNumber(string filename)
 	return assumeUnique(s);
 }
 
-void main(string[] args)
+void BenchReport(in int[] nums)
 {
-	string filename, changeFile;
-	getopt(args, "file|f", &filename, "outfile|o", &changeFile);
-	writeln(filename);
-	auto bytes = cast(ubyte[]) read(filename);
-	auto somePrimes = loadPrimeNumber(filename);
-	auto r = assumeSorted(somePrimes);
-	assert(r.contains(3));
-	assert(r.contains(31));
-	assert(!r.contains(32));
+	auto r = assumeSorted(nums);
 	void f0()
 	{
 		r.contains(16229);
 	}
-
+	
 	void f1()
 	{
 		r.canFind(16229);
 	}
 	auto result = benchmark!(f0,f1)(1_000);
 	auto s = comparingBenchmark!(f0,f1, 1_000);
-	foreach(TickDuration ele; result) {
-		writeln(ele.to!("usecs", float));
-	}
-	writeln(s.targetTime);
+	writeln(s.point());
+}
+
+void main(string[] args)
+{
+	string filename, changeFile;
+	int[] nums; 
+	getopt(args, "file|f", &filename, "outfile|o", &changeFile, "nums|n", &nums);
+	writeln(filename);
+	auto somePrimes = loadPrimeNumber(filename);
+	auto r = assumeSorted(somePrimes);
+	assert(r.contains(3));
+	assert(r.contains(31));
+	assert(!r.contains(32));
+	BenchReport(somePrimes);
 }
