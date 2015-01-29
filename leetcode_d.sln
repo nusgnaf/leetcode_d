@@ -5,6 +5,8 @@ Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "leetcode_d", "leetcode_d.dp
 EndProject
 Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "primeNum", "primeNum\primeNum.dproj", "{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}"
 EndProject
+Project("{3947E667-4C90-4C3A-BEB9-7148D6FE0D7C}") = "guiguzi", "guiguzi\guiguzi.dproj", "{EFF5C1AE-A17F-42D7-BE2B-406350476E60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +20,12 @@ Global
 		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
 		{9EDAEF26-0673-4DCD-93F9-7CE1208669B6}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Unittest|Any CPU.ActiveCfg = Unittest|Any CPU
+		{EFF5C1AE-A17F-42D7-BE2B-406350476E60}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +34,6 @@ Global
 		{F2D594C8-4D36-47FE-884F-6017EC5A4E24}.Unittest|Any CPU.Build.0 = Unittest|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = primeNum\primeNum.dproj
+		StartupItem = guiguzi\guiguzi.dproj
 	EndGlobalSection
 EndGlobal
