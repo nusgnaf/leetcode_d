@@ -77,13 +77,13 @@ void main(string[] args)
 	int[] nums; 
 	arraySep = ",";
 	getopt(args, "file|f", &filename, "outfile|o", &changeFile, "nums|n", &nums);
-	writeln(nums);
+//	writeln(nums);
 	auto F = PrimeChecker(filename);
 	//writeln(F.checking(9999937));
 	auto somePrimes = loadPrimeNumber(filename);
 	auto r = assumeSorted(somePrimes);
 //	BenchReport(somePrimes);
-	if (nums)
+	if (!nums.empty)
 	{
 		bool[] rs = new bool[nums.length];
 		foreach(i, ele; nums) {
